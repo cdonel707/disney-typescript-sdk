@@ -69,8 +69,8 @@ export class DisneyOpensourceClient {
             headers: {
                 "X-Fern-Language": "JavaScript",
                 "X-Fern-SDK-Name": "disney",
-                "X-Fern-SDK-Version": "0.0.3",
-                "User-Agent": "disney/0.0.3",
+                "X-Fern-SDK-Version": "0.0.5",
+                "User-Agent": "disney/0.0.5",
                 "X-Fern-Runtime": core.RUNTIME.type,
                 "X-Fern-Runtime-Version": core.RUNTIME.version,
                 ...requestOptions?.headers,
@@ -138,8 +138,8 @@ export class DisneyOpensourceClient {
             headers: {
                 "X-Fern-Language": "JavaScript",
                 "X-Fern-SDK-Name": "disney",
-                "X-Fern-SDK-Version": "0.0.3",
-                "User-Agent": "disney/0.0.3",
+                "X-Fern-SDK-Version": "0.0.5",
+                "User-Agent": "disney/0.0.5",
                 "X-Fern-Runtime": core.RUNTIME.type,
                 "X-Fern-Runtime-Version": core.RUNTIME.version,
                 ...requestOptions?.headers,
