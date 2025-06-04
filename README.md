@@ -1,14 +1,14 @@
 # Disneypublicapi TypeScript Library
 
 [![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-Built%20with%20Fern-brightgreen)](https://buildwithfern.com?utm_source=github&utm_medium=github&utm_campaign=readme&utm_source=https%3A%2F%2Fgithub.com%2Fcdonel707%2Fdisney-typescript-sdk)
-[![npm shield](https://img.shields.io/npm/v/disney)](https://www.npmjs.com/package/disney)
+[![npm shield](https://img.shields.io/npm/v/disney-public-sdk)](https://www.npmjs.com/package/disney-public-sdk)
 
 The Disneypublicapi TypeScript library provides convenient access to the Disneypublicapi API from TypeScript.
 
 ## Installation
 
 ```sh
-npm i -s disney
+npm i -s disney-public-sdk
 ```
 
 ## Reference
@@ -20,7 +20,7 @@ A full reference for this library is available [here](https://github.com/cdonel7
 Instantiate and use the client with the following:
 
 ```typescript
-import { DisneyOpensourceClient } from "disney";
+import { DisneyOpensourceClient } from "disney-public-sdk";
 
 const client = new DisneyOpensourceClient();
 await client.getAllCharacters();
@@ -32,7 +32,7 @@ The SDK exports all request and response types as TypeScript interfaces. Simply 
 following namespace:
 
 ```typescript
-import { DisneyOpensource } from "disney";
+import { DisneyOpensource } from "disney-public-sdk";
 
 const request: DisneyOpensource.GetAllCharactersRequest = {
     ...
@@ -45,7 +45,7 @@ When the API returns a non-success status code (4xx or 5xx response), a subclass
 will be thrown.
 
 ```typescript
-import { DisneyOpensourceError } from "disney";
+import { DisneyOpensourceError } from "disney-public-sdk";
 
 try {
     await client.getAllCharacters(...);
@@ -145,7 +145,7 @@ The SDK provides a way for you to customize the underlying HTTP client / Fetch f
 unsupported environment, this provides a way for you to break glass and ensure the SDK works.
 
 ```typescript
-import { DisneyOpensourceClient } from "disney";
+import { DisneyOpensourceClient } from "disney-public-sdk";
 
 const client = new DisneyOpensourceClient({
     ...

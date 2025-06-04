@@ -1,6 +1,6 @@
 {
-    "name": "disney",
-    "version": "0.0.6",
+    "name": "disney-public-sdk",
+    "version": "0.0.7",
     "private": false,
     "repository": "https://github.com/cdonel707/disney-typescript-sdk",
     "type": "commonjs",
